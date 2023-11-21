@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conexao->query($sql) === TRUE) {
         echo "Cliente atualizado com sucesso!";
+        echo "<br><button><a href='index.php'>Voltar para pagina inicial</a></button>";
     } else {
         echo "Erro ao atualizar cliente: " . $conexao->error;
     }

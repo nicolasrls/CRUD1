@@ -61,7 +61,7 @@
             // Ajusta o placeholder com base na opção selecionada
             switch (opcaoSelecionada) {
                 case 'dt_nascimento':
-                    textoBuscaInput.placeholder = 'Formato: XX/XX/XXXX';
+                    textoBuscaInput.placeholder = 'Formato: XX-XX-XXXX';
                     break;
                 case 'telefone':
                     textoBuscaInput.placeholder = 'Formato: (XX) XXXXX-XXXX';

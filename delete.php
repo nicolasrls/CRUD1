@@ -17,6 +17,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
     if ($conexao->query($sql) === TRUE) {
         echo "Cliente excluído com sucesso!";
+        echo "<br><button><a href='index.php'>Voltar para pagina inicial</a></button>";
     } else {
         echo "Erro ao excluir cliente: " . $conexao->error;
     }

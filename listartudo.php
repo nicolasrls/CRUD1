@@ -36,13 +36,14 @@ if ($result->num_rows > 0) {
         echo "<td><a href='delete.php?id={$row['id']}'>Excluir</a> | <a href='editar.php?id={$row['id']}'>Editar</a></td>";
         echo "</tr>";
     }
-
     echo "</table>";
+    echo "<br><button><a href='index.php'>Voltar para pagina inicial</a></button>";
 } else {
     echo "Nenhum cliente encontrado." . $conexao->error;
 }
 
 // Fechar a conexão
+
 $conexao->close();
 ?>
 
