@@ -27,6 +27,7 @@ include("script.php");
 
 if(mysqli_query($conexao,"INSERT INTO clientes(nome,dt_nascimento,email,telefone) VALUES('$nome','$dataFormatada','$email','$telefoneNv')")){
     echo "Sucesso";
+    // echo "<button><a href="index.php" >Voltar para pagina inicial</a></button>";
 }else{
     echo "não cadastrou";
 }
